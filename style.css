@@ -1,0 +1,41 @@
+body {
+    background-color: #282c34;
+    color: #61dafb;
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.typing-title {
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #61dafb;
+    width: 0ch;
+    animation: typing 2.5s steps(100) infinite, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 26ch;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #61dafb;
+    }
+}
