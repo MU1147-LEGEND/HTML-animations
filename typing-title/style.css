@@ -16,7 +16,7 @@ body {
     overflow: hidden;
     border-right: 2px solid #61dafb;
     width: 0ch;
-    animation: typing 2.5s steps(100) infinite, blink 0.7s step-end infinite;
+    animation: typing 10s steps(100) infinite, blink 0.7s step-end infinite;
 }
 
 @keyframes typing {
